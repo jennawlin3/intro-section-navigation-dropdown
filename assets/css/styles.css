@@ -172,6 +172,12 @@ a {
     margin-bottom: 20px;
 }
 
+.more-btn_container {
+    height: 80px;
+    margin-top: 10px;
+
+}
+
 .more-btn {
     background-color: var(--almost-black);
     color: var(--almost-white);
@@ -263,6 +269,10 @@ a {
         gap: 20px;
     }
 
+    .ul-desktop li {
+        width: 100px;
+    }
+
     .ul-desktop a {
         color: var(--almost-black);
         cursor: pointer;
@@ -311,6 +321,7 @@ a {
     .button-container button {
         cursor: pointer;
         font-family: "Epilogue", sans-serif;
+        width: 100px;
     }
 
     .ul-desktop a:hover, .ul-collapsable_desktop li a:hover, .button-container button:hover {
