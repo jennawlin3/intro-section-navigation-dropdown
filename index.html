@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="mask hide"></div>
+<header id="header">
+  <div id="logo"><img src="./images/logo.svg" alt="logo"></div>
+  <nav class="navegation-mobile">
+    <div class="navegation-mobile">
+      <img src="./images/icon-menu.svg" id="menu-mobile">
+      <div class="menu-collapsable hide" id="collapsable-menu_mobile">
+        <div id="close-menu">
+          <img src="./images/icon-close-menu.svg" alt="close-menu" srcset="" id="close-menu">
+        </div>
+        <div class="menu-mobile_container">
+          <ul class="ul-mobile">
+            <li id="features-mobile"><a href="#">Features</a><span id="collapsable"><img src="./images/icon-arrow-down.svg" alt="" srcset=""></span>
+              <ul class="ul-collapsable hide" id="collapsable-features_mobile">
+                <li id="todo-list_mobile"><img src="./images/icon-todo.svg" alt="" srcset="">Todo List</li>
+                <li id="calendar-mobile"><img src="./images/icon-calendar.svg" alt="" srcset=""><a href="#">Calendar</a></li>
+                <li id="reminders-mobile"><img src="./images/icon-reminders.svg" alt="" srcset=""><a href="#">Reminders</a></li>
+                <li id="planning-mobile"><img src="./images/icon-planning.svg" alt="" srcset=""><a href="#">Planning</a></li>
+              </ul>
+            </li>
+            <li id="company-mobile"><a href="#">Company</a><span id="collapsable"><img src="./images/icon-arrow-down.svg" alt="" srcset=""></span>
+              <ul class="ul-collapsable hide" id="collapsable-company_mobile">
+                <li id="history-mobile"><a href="#">History</a></li>
+                <li id="our-team_mobile"><a href="#">Our Team</a></li>
+                <li id="blogs-mobile"><a href="#">Blogs</a></li>
+              </ul>
+            </li>
+            <li id="careers-mobile"><a href="#">Careers</a></li>
+            <li id="about-mobile"><a href="#">About</a></li>
+        <div class="button-container">
+          <button id="login-mobile">Login</button>
+          <button id="register-desktop">Register</button>
+        </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navegation-desktop">
+    <div id="navegation-desktop">
+        <div class="menu-desktop_container">
+          <ul class="ul-desktop">
+            <li id="features-desktop"><a href="#">Features<span id="collapsable"><img src="./images/icon-arrow-down.svg" alt="" srcset=""></span></a>
+              <ul class="ul-collapsable_desktop features hide" id="collapsable-features">
+                <li id="to-do_list-desktop"><img src="./images/icon-todo.svg" alt="" srcset=""><a href="#">Todo List</a></li>
+                <li id="calendar_desktop"><img src="./images/icon-calendar.svg" alt="" srcset=""><a href="#">Calendar</a></li>
+                <li id="reminders_desktop"><img src="./images/icon-reminders.svg" alt="" srcset=""><a href="#">Reminders</a></li>
+                <li id="planning_desktop"><img src="./images/icon-planning.svg" alt="" srcset=""><a href="#">Planning</a></li>
+              </ul>
+            </li>
+            <li id="company-desktop"><a href="#">Company<span id="collapsable"><img src="./images/icon-arrow-down.svg" alt="" srcset=""></span></a>
+              <ul class="ul-collapsable_desktop company hide" id="collapsable-company">
+                <li id="history_desktop"><a href="#">History</a></li>
+                <li id="our-team_desktop"><a href="#">Our Team</a></li>
+                <li id="blogs_desktop"><a href="#">Blogs</a></li>
+              </ul>
+            </li>
+            <li id="careers_desktop"><a href="#">Careers</a></li>
+            <li id="about_desktop"><a href="#">About</a></li>
+          </ul>
+        </div>
+
+      </div>        
+      <div class="button-container">
+          <button id="login-btn_desktop">Login</button>
+          <button id="register-btn_desktop">Register</button>
+    </div>
+  </nav>
+</header>
+<main id="main-container">
+  <section class="hero-container">
+    <picture class="hero">
+      <source srcset="./images/image-hero-desktop.png" alt="Hero desktop" media="(min-width:768px)">
+      <img src="./images/image-hero-mobile.png" alt="Hero mobile">
+    </picture>
+  </section>
+  <section class="content-container">
+  <h1>Make remote work</h1>
+  <p>Get your team in sync, no matter your location. Streamline processes, 
+    create team rituals, and watch productivity soar.</p>
+    <a href="#" class="more-btn">Learn More</a>
+  </section>
+  <section class="client-brands">
+    <img src="./images/client-databiz.svg" alt="" srcset="">
+    <img src="./images/client-audiophile.svg" alt="" srcset="">
+    <img src="./images/client-meet.svg" alt="" srcset="">
+    <img src="./images/client-maker.svg" alt="" srcset="">
+  </section>
+</main>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/jenn-acosta7/">Jenn Acosta</a>
+  </div>
+  <script src="./app/app.js"></script>
+</body>
+</html>
