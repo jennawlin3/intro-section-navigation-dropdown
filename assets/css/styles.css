@@ -294,6 +294,7 @@ a {
 
     .ul-collapsable_desktop li {
         margin: 10px 0;
+        width: auto;
     }
 
     .ul-collapsable_desktop li img {
